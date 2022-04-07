@@ -13,6 +13,7 @@ This is a web based "story time" application using modern web frameworks. This w
 
 
 ## Resources 
+- [Using OAuth 2.0 to Access Google APIs ](https://developers.google.com/identity/protocols/oauth2)
 - [Spring Boot CRUD operations](https://www.geeksforgeeks.org/spring-boot-crud-operations-using-mysql-database/)
 - [How to interact with REST APIs from JavaScript](https://blog.teclado.com/how-to-interact-with-rest-apis-from-javascript/)
 - [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
@@ -27,7 +28,7 @@ This is a web based "story time" application using modern web frameworks. This w
 
 **User Auth Pages (Must be logged in to see)**
 
-3. profile.html (log
+3. profile.html (log-in w/ Google OAuth2.0)
 
 ## Site Map 
 - We are thinking of condensing the web front-end to three HTML files that represent index page, about page, and a profile page (once user is logged in).
