@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Group6Cst438Project03WebApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(Group6Cst438Project03WebApplication.class, args);
 	}
 
