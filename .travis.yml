@@ -1,4 +1,9 @@
+before_install:
+- echo -e "Checking Maven Dependency.."
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
 language: java
+mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 deploy:
   provider: heroku
   api_key:
