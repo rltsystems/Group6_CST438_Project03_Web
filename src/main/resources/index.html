@@ -1,0 +1,68 @@
+<!--Based on https://www.youtube.com/watch?v=nrgP4hfTAxU, retrieved on 04/21/2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Like/Dislike</title>
+</head>
+
+<style>
+    body {
+        min-width: 100%;
+        text-align: center;
+    }
+    #all {
+        width:100%;
+        margin: 0 auto;
+    }
+    #likes {
+        height:5px;
+        width:50%;
+        background:#0000ee;
+        float:left;
+    }
+    #dislikes {
+        height:5px;
+        width:50%;
+        background:#ccc;
+        float:right;
+    }
+    #bar{
+        margin:0 auto;
+        width:50%
+    }
+</style>
+<body>
+<div id="all">
+    <div id = "bar">
+    <div id = "likes"></div>
+         <div id = "dislikes"></div>
+    </div>
+    <input type="button" value="Like" onclick="like();"/>
+    <input type="button" value="Dislike" onclick="dislike();"/>
+</div>
+</body>
+
+<script type="text/javascript">
+    var likes = 0, dislikes = 0;
+    function like(){
+        likes++;
+        calculateBar();
+    }
+    function dislike(){
+        dislikes++;
+        calculateBar();
+    }
+    function calculateBar(){
+        var total = likes + dislikes;
+        var percentageLikes = (likes/total)*100;
+        var percentageDislikes = (dislikes/total)*100;
+
+        document.getElementById('likes').style.width=percentageLikes.toString()+"%";
+        document.getElementById('dislikes').style.width=percentageDislikes.toString()+"%";
+    }
+
+    calculateBar();
+</script>
+</html>
