@@ -63,7 +63,9 @@ This is a web based "story time" application using modern web frameworks. This w
 ## Site Map 
 - We are thinking of condensing the web front-end to three HTML files that represent index page, about page, and a profile page (once user is logged in).
 - Landing Page
-<img src="https://user-images.githubusercontent.com/10646650/165412399-c99afafa-c354-4366-af7c-89c06aaf1097.png" width="600">
+<img src="https://user-images.githubusercontent.com/10646650/165805163-efee610c-d6da-4ed2-be03-22733641022a.png" width="600">
+<img src="https://user-images.githubusercontent.com/10646650/165805081-e4137ddf-c74f-4756-8388-9eb38d8e41a7.png" width="600">
+
 
 - Profile Page
 <img src="https://user-images.githubusercontent.com/10646650/165412418-8129df3b-d26c-4353-81bc-62eb75008a54.png" width="600">
