@@ -1,68 +1,168 @@
-<!--Based on https://www.youtube.com/watch?v=nrgP4hfTAxU, retrieved on 04/21/2022 -->
+<!--
+=========================================================
+* Argon Design System - v1.2.2
+=========================================================
 
+* Product Page: https://www.creative-tim.com/product/argon-design-system
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Like/Dislike</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <title>
+    Storytime.io
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link href="./assets/css/font-awesome.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="./assets/css/argon-design-system.css?v=1.2.2" rel="stylesheet" />
 </head>
 
-<style>
-    body {
-        min-width: 100%;
-        text-align: center;
-    }
-    #all {
-        width:100%;
-        margin: 0 auto;
-    }
-    #likes {
-        height:5px;
-        width:50%;
-        background:#0000ee;
-        float:left;
-    }
-    #dislikes {
-        height:5px;
-        width:50%;
-        background:#ccc;
-        float:right;
-    }
-    #bar{
-        margin:0 auto;
-        width:50%
-    }
-</style>
-<body>
-<div id="all">
-    <div id = "bar">
-    <div id = "likes"></div>
-         <div id = "dislikes"></div>
-    </div>
-    <input type="button" value="Like" onclick="like();"/>
-    <input type="button" value="Dislike" onclick="dislike();"/>
+<body class="index-page">
+<!--Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-default">
+        <div class="container">
+          <a class="navbar-brand" href="javascript:;">Storytime.io</a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar-default" style="">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  <a href="./index.html">
+                    <img src="./assets/img/brand/blue.png">
+                  </a>
+                </div>
+                <div class="col-6 collapse-close">
+                  <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="javascript:;">
+                  <i class="ni ni-favourite-28"></i>
+                  <span class="nav-link-inner--text d-lg-none">Discover</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="javascript:;">
+                  <i class="ni ni-notification-70"></i>
+                  <span class="nav-link-inner--text d-lg-none">Profile</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-icon dropdown-toggle" href="javascript:;" id="navbar-default_dropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span class="nav-link-inner--text d-lg-none">Settings</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
+                  <a class="dropdown-item" href="javascript:;">Action</a>
+                  <a class="dropdown-item" href="javascript:;">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="javascript:;">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!--End Navbar-->
+<!--Body Block #1 -->
+<div class="container shape-container d-flex align-items-center py-lg">
+<div class="col-lg-6 text-center">
+                <img src="./assets/img/brand/white.png" style="width: 200px;" class="img-fluid">
+                <h2 class="display-2 mb-0">Storytime.io</h2>
+                <p class="lead text-black">Create better stories, together.</p>
+  </div
+                <div class="nav-wrapper">
+                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">App Preview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-2-tab" data-toggle="tab" href="#tabs-text-2" role="tab" aria-controls="tabs-text-2" aria-selected="false">Register Now</a>
+                  </li>                  
+                </ul>
+              </div>
+    <div class="card shadow">
+                <div class="card-body ">
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show " id="tabs-text-1" role="tabpanel" aria-labelledby="tabs-text-1-tab">
+                     
+                      <p class="description text-center">1. Create an account.</p>
+                      <p class="description text-center">2. Explore Stories</p>
+                      <p class="description text-center">3. Create or Modify a Story</p>
+                      <p class="description text-center">4. Share with friends!</p>
+                 
+                    </div>
+                    
+                    <div class="tab-pane fade" id="tabs-text-2" role="tabpanel" aria-labelledby="tabs-text-2-tab">
+                      
+          <div class="container register-form">
+            <div class="form">
+                <div class="row align-items-center justify-content-center">
+                    <p>Register to start creating stories today.</p>
+                </div>
+
+                <div class="form-content">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter an E-mail Address *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Password *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Confirm Password *" value=""/>
+                            </div>
+                                              <button type="button" class="btn btn-default">Submit</button>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+        </div>
+                    </div>                 
+                  </div>
+                </div>
+              </div>
 </div>
+
+<!--Site Header-->
+
+<!---End Header-->   
+
+<!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>  
+
+<!--Footer-->
+ <p class ="lead text-muted">CST438 Project 03 Group 6 </p> 
+  <!--End Footer-->
 </body>
 
-<script type="text/javascript">
-    var likes = 0, dislikes = 0;
-    function like(){
-        likes++;
-        calculateBar();
-    }
-    function dislike(){
-        dislikes++;
-        calculateBar();
-    }
-    function calculateBar(){
-        var total = likes + dislikes;
-        var percentageLikes = (likes/total)*100;
-        var percentageDislikes = (dislikes/total)*100;
-
-        document.getElementById('likes').style.width=percentageLikes.toString()+"%";
-        document.getElementById('dislikes').style.width=percentageDislikes.toString()+"%";
-    }
-
-    calculateBar();
-</script>
 </html>
